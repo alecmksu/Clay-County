@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+/*header basic outline added by Jacob down to topnav a:hover*/
+.header {
+    padding:30px;
+    text-align: left;
+    background: #295366
+}
+
+.topnav{
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color:aqua;
+    color:black;
+
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -60,4 +86,11 @@ body {
   .cell {
     border: 1px solid black;
     background-color: white;
+  }
+/* Added by jacob */
+  .footer{
+    padding:20px;
+    text-align: center;
+    background:#295366;
+    margin-top:20px;
   }
