@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clay County Map</title>
+</head>
+<body>
+    <!-- Form Section -->
+    <div class="container">
+        <form class="section">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter a name">
+            <!-- Section -->
+             <label for="section">Section:</label>
+             <input type="text" id="section" placeholder="Enter a section">
+            <!-- Filters with dropdown-->
+             <label for="filters" id="filter">Filters</label>
+             <select title="Filter" id="filters-drop" class="filter-hide">
+                <option value="all">All</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+             </select>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
