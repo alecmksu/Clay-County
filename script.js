@@ -12,19 +12,27 @@ document.getElementById('filter').addEventListener('click', function() {
 
 
 
-//creates 4x5 6x6 grid 
-function gridMap() {
-    
-    const outsideGrid = document.querySelector('.outsideGrid')
-    const insideGrid = document.querySelector('.insideGrid');
+const outsideGrid = document.querySelector('.outsideGrid')
+const insideGrid = document.querySelector('.insideGrid');
 
-  for (let i = 0; i < 20; i++) {
-        const cell = document.createElement('div');
-        cell.classList.add('cell');
-        cell.id = "cell" + i 
-        outsideGrid.appendChild(cell);
+//creates a 4x5 grid with a 6x6 in each cell of the 4x5
+function gridMap() {
+
+//4x5
+for (let i = 0; i < 20; i++) {
+    const cell = document.createElement('div');
+    cell.classList.add('cell');
+    cell.id = "Outercell" + i 
+    outsideGrid.appendChild(cell);
+
+//6x6
+for(let j = 0; j < 36; j++) {
+    const cellInside = document.createElement('div')
+    cellInside.classList.add("innerCell")
+    cellInside.id = "innerCell" + j 
+    cell.appendChild(cellInside)
 
   }
+ }
 }
-
-  gridMap()
+gridMap();
