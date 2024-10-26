@@ -72,7 +72,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     width: 500px;
     height: 500px;
-
 }
 
 /* 4x5 grid cells */
