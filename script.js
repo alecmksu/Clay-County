@@ -18,7 +18,7 @@ const outsideGrid = document.querySelector('.outsideGrid')
 function gridMap() {
 
 //4x5
-for (let i = 0; i < 20; i++) {
+for(let i = 0; i < 20; i++) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
     cell.id = "Outercell" + i 
