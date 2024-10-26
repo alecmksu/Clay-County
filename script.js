@@ -13,7 +13,6 @@ document.getElementById('filter').addEventListener('click', function() {
 
 
 const outsideGrid = document.querySelector('.outsideGrid')
-const insideGrid = document.querySelector('.insideGrid');
 
 //creates a 4x5 grid with a 6x6 in each cell of the 4x5
 function gridMap() {
@@ -35,4 +34,5 @@ for(let j = 0; j < 36; j++) {
   }
  }
 }
+
 gridMap();
