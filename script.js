@@ -35,6 +35,7 @@ for(let j = 0; j < 36; j++) {
  }
 }
 
+gridMap()
 
 //temp data for testing
 const records = [
