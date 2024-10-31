@@ -7,6 +7,7 @@
 /*header basic outline added by Jacob down to topnav a:hover*/
 .header {
     padding:30px;
+    padding-bottom: 10px;
     text-align: left;
     background: #295366;
     color:white;
