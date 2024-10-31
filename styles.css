@@ -126,6 +126,10 @@ body {
 
 }
 
+.highlight {
+    background-color: yellow;
+}
+
 /* Added by jacob */
 .footer{
     width: 100%;
