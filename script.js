@@ -89,7 +89,6 @@ if(targetSection) {
     TR.appendChild(TD3)
     TR.appendChild(TD4)
     TD1.innerHTML = name 
-    TD2.innerHTML = date  
 
 });
 })
