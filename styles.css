@@ -86,7 +86,11 @@ body {
     font-size: 15px;
     border-radius: 5px;
 }
-/* Data form */
+/* Table Date form */
+.table {
+    display: flex;
+    flex-direction: column;
+}
 /* filter dropdown hide */
 .filter-hide {
     display: none;
@@ -131,4 +135,3 @@ body {
     background-image: linear-gradient(#4d7080,#295366);
     color:white;
   }
-
