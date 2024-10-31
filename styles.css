@@ -69,12 +69,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.section {
-    display: flex;
-    flex-direction: row;
-    align-items: last baseline;
-    gap: 15px;
-}
+/* input form */
 .section-label {
     margin-bottom: 8px;
 }
@@ -83,7 +78,15 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     width: 250px;
+    border-radius: 5px;
 }
+.submit-btn{
+    background: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+/* Data form */
 /* filter dropdown hide */
 .filter-hide {
     display: none;

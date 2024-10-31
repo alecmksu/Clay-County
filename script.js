@@ -1,8 +1,8 @@
-// Changing Filter dropdown menu display propety
+// Alec: Changing Filter dropdown menu display propety
 document.getElementById('filter').addEventListener('click', function() {
-    const filterDropdown = document.getElementById('filters-drop');
+    const filterDropdown = document.getElementById('filtersDrop');
     
-    // Toggle display property
+    // Alec: Toggle display property
     if (filterDropdown.classList.contains('filter-hide')) {
       filterDropdown.classList.remove('filter-hide');
     } else {

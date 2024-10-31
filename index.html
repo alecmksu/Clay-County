@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Clay County Map</title>
 </head>
+
 <body>
 
     <!--Jacob added-->
     <div class = "header">
-        <img src="LogoPNG.png" alt="Logo" class="header-logo">
         <h1>Clay County Historical Society Deed Map</h1>
         <div class ="topnav">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2 </a>
-            <a href="#">Link 3</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
         </div>
     </div>
     <!-- Map Grid -->
-    <div class ="outsideGrid"></div>
-    <!-- Form Section -->
+    <div class="outsideGrid"></div>
+    <!-- Form Section: Alec Portion -->
     <div class="container">
+        <!-- Input Form -->
         <form class="section">
-            <!-- First Name -->
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" placeholder="Enter first name">
-            <!-- Last Name -->
-             <label for="lastName">Last Name</label>
-             <input type="text" id="lastName" placeholder="Enter last name">
-            <!-- Section -->
-             <label for="section">Section:</label>
-             <input type="text" id="section" placeholder="Enter a section">
+            <!-- Grantor Name -->
+            <label for="grantorName">Grantor Name:</label>
+            <input type="text" id="grantorName" placeholder="Enter Grantor name">
+            <!-- Grantee Name -->
+            <label for="granteeName">Grantee Name:</label>
+            <input type="text" id="granteeName" placeholder="Enter Grantee name">
             <!-- Filters with dropdown-->
-             <!-- Alec: line 1 script -->
-             <label for="filters" id="filter">Filters</label>
-             <select title="Filter" id="filters-drop" class="filter-hide">
+            <!-- Alec: line 1 script -->
+            <label for="filters" id="filter" class="start-filter">Deed Filters</label>
+            <select title="Filter" id="filtersDrop" class="filter-hide">
                 <option value="all">All</option>
                 <option value="category1">Category 1</option>
                 <option value="category2">Category 2</option>
                 <option value="category3">Category 3</option>
-             </select>
-             <!-- Alec: line 11 script -->
+            </select>
+            <!-- Alec: line 11 script -->
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
+        <!-- Data Form -->
+        <div id="dataDisplay">
+
+        </div>
     </div>
+    <!-- End of Alec Portion -->
+
     <script src="script.js"></script>
 
     <!-- Jacob added-->
@@ -53,4 +60,5 @@
         <h5>The Clay County Historical Society is a 501(c)(3) nonprofit - EIN# 23-7377697</h5>
     </div>
 </body>
+
 </html>
