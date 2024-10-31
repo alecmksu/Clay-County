@@ -20,7 +20,6 @@ const records = [
 ];
 
     const outsideGrid = document.querySelector('.outsideGrid')
-    const insideGrid = document.querySelector('.insideGrid');
     const tableGrab = document.getElementById("tableGrab")
 
   function gridMap() {
@@ -80,14 +79,8 @@ if(targetSection) {
     //create table 
     let TR = document.createElement("tr"); 
     let TD1 = document.createElement("td"); 
-    let TD2 = document.createElement("td"); 
-    let TD3 = document.createElement("td"); 
-    let TD4 = document.createElement("td");  
     tableGrab.appendChild(TR);
     TR.appendChild(TD1); 
-    TR.appendChild(TD2)
-    TR.appendChild(TD3)
-    TR.appendChild(TD4)
     TD1.innerHTML = name 
 
 });
