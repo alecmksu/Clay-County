@@ -19,15 +19,9 @@ const records = [
 
 ];
 
-
-<<<<<<< HEAD
     const outsideGrid = document.querySelector('.outsideGrid')
     const insideGrid = document.querySelector('.insideGrid');
     const tableGrab = document.getElementById("tableGrab")
-=======
-  const outsideGrid = document.querySelector('.outsideGrid')
-  const insideGrid = document.querySelector('.insideGrid');
->>>>>>> 329fa2a870c137d760ceef3ffe4c0510ba7a125f
 
   function gridMap() {
 
