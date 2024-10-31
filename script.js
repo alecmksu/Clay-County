@@ -56,7 +56,7 @@ const search = document.getElementById("granteeName").value.toLowerCase();
 
 //filters through data and grabs anyone with the name you input. Creates an array that holds the persons data
 let recordName = records.filter(person => person.name.toLowerCase() == search); 
-
+console.log(recordName)
 //loops through the array made by the filter() method and grabs individual properties. 
 //will be used to show names(grantee and grantor), dates etc. 
 //will need divs for the bottom section 
