@@ -85,13 +85,45 @@ body {
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: #d4e8f2;
 }
 /* Table Date form */
 .table {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
-/* filter dropdown hide */
+/* filter dropdown menu */
+.filter-container{
+    position: relative;
+    display: inline-block;
+}
+.dropdown {
+    cursor: pointer;
+    display: inline-block;
+}
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-option {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.dropdown-option:hover {
+    background-color: #d4e8f2;
+}
 .filter-hide {
     display: none;
 }
