@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*header basic outline added by Jacob down to topnav a:hover*/
+
 /*header basic outline added by Jacob down to topnav a:hover*/
 .header {
     position: relative; /* Allows absolute positioning of child elements */
@@ -50,7 +50,7 @@
 }
 
 .topnav a:hover {
-    background-color: aqua;
+    background-color: #3d9be9;
     color: black;
 }
 body {
@@ -69,7 +69,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* input form */
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 15px;
+}
 .section-label {
     margin-bottom: 8px;
 }
@@ -78,52 +83,8 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     width: 250px;
-    border-radius: 5px;
 }
-.submit-btn{
-    background: #fff;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.submit-btn:hover{
-    background-color: #d4e8f2;
-}
-/* Table Date form */
-.table {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-/* filter dropdown menu */
-.filter-container{
-    position: relative;
-    display: inline-block;
-}
-.dropdown {
-    cursor: pointer;
-    display: inline-block;
-}
-.dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 5px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-.dropdown-option {
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-.dropdown-option:hover {
-    background-color: #d4e8f2;
-}
+/* filter dropdown hide */
 .filter-hide {
     display: none;
 }
@@ -158,8 +119,24 @@ body {
 
 }
 
-.highlight {
-    background-color: yellow;
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-container {
+    display: inline-block;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+
+}
+
+th {
+    height: 40px;
 }
 
 /* Added by jacob */
@@ -171,3 +148,4 @@ body {
     background-image: linear-gradient(#4d7080,#295366);
     color:white;
   }
+
