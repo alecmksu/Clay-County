@@ -55,6 +55,32 @@
     background-color: #3d9be9;
     color: black;
 }
+
+
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-weight: bold;
+}
+
+/* Icon styling */
+.login-link ion-icon {
+    font-size: 20px;
+}
+
+/* Hover effect */
+.login-link:hover {
+    color: lightgray;
+}
+
+
 body {
     height: 150vh;
     display: flex;
