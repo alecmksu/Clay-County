@@ -188,4 +188,9 @@ th {
     background-image: linear-gradient(#4d7080,#295366);
     color:white;
   }
+  
+/* highlight grid */
+  .highlight {
+    background-color: yellow;
+}
 
