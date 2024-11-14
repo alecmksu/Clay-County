@@ -71,7 +71,7 @@ clearTheGrids.forEach(grid => {
 grid.classList.remove("highlight"); 
 })
 
-const search = document.getElementById("nameInput").value.toLowerCase(); 
+const search = document.getElementById("granteeName").value.toLowerCase(); 
 
 //filters through data and grabs anyone with the name you input. Creates an array that holds the persons data
 let recordName = records.filter(person => person.name.toLowerCase() == search); 
