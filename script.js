@@ -100,11 +100,13 @@ if(targetSection) {
 let TR = document.createElement("tr"); 
 let TD1 = document.createElement("td"); 
 let TD2 = document.createElement("td"); 
+let TD3 = document.createElement("td"); 
 tableGrab.appendChild(TR);
 TR.appendChild(TD1); 
 TR.appendChild(TD2); 
+TR.appendChild(TD3); 
 TD1.innerHTML = name; 
-TD2.innerHTML = date; 
+TD3.innerHTML = date; 
 
 });
 }); 
