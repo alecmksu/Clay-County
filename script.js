@@ -105,7 +105,7 @@ tableGrab.appendChild(TR);
 TR.appendChild(TD1); 
 TR.appendChild(TD2); 
 TR.appendChild(TD3); 
-TD1.innerHTML = name; 
+TD2.innerHTML = name; 
 TD3.innerHTML = date; 
 
 });
