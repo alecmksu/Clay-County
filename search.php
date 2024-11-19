@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: application/json');
 
     $servername = "localhost";
     $username = "root";
@@ -39,6 +39,12 @@
     // }
 
     echo json_encode($data);
+// Add this at the end of the PHP file
+if (empty($data)) {
+    echo json_encode(["message" => "No results found"]);
+} else {
+    echo json_encode($data);
+}
 
     $stmt->close();
     $conn->close();
