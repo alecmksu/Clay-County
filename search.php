@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 
     $servername = "localhost";
     $username = "root";
@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection Failed: " . $conn->connect_error);
     }
     echo "Successful Connection";
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $search_name = "%" . $_POST['grantorName'] . "%";  
     
     $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantor_1` LIKE ?";
