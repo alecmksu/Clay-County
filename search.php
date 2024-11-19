@@ -11,8 +11,8 @@
     if ($conn->connect_error) {
         die("Connection Failed: " . $conn->connect_error);
     }
-    echo "Successful Connection";
-    
+
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $search_name = "%" . $_POST['grantorName'] . "%";  
     
