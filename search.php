@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->connect_error) {
         die("Connection Failed: " . $conn->connect_error);
     }
-
+    echo "Successful Connection";
     $search_name = "%" . $_POST['grantorName'] . "%";  
     
     $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantor_1` LIKE ?";
