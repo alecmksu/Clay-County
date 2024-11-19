@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-         echo "Grantor Name: " . $row["Last Name Grantor_1"] . "<br>";
+         
             $data[] = $row;
         }
     } 
