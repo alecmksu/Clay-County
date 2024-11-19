@@ -15,7 +15,23 @@ document.addEventListener('click', function(event) {
     filterDropdown.classList.add('filter-hide');
   }
 })
-// Click event for each option: maybe querySelectorAll for dropdown-option with an forEach loop?
+
+
+// fetch('http://localhost/search.php') // Update the URL if your PHP file is in a different directory
+// .then(response => response.json())  // Parse the JSON response
+// .then(data => {
+    
+//     const records = []; 
+
+//     data.forEach(item => {
+//         name: item.name; 
+
+//     });
+// })
+// .catch(error => console.error('Error fetching data:', error));
+
+
+
 
 const records = [
   { name: "John Doe", location: { township: 6, range: 1, section: 3 }, date: "10/20/24" },
