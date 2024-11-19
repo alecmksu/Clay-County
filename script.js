@@ -17,18 +17,17 @@ document.addEventListener('click', function(event) {
 })
 
 
-// fetch('http://localhost/search.php') // Update the URL if your PHP file is in a different directory
-// .then(response => response.json())  // Parse the JSON response
-// .then(data => {
+fetch('http://localhost/search.php')  // Ensure the correct path to your PHP file
+.then(response => response.json())    // Parse the JSON response
+.then(data => {
+    // Here, 'data' is an array of objects (e.g., [{id: 1, name: 'John Doe'}, ...])
+    console.log('Fetched Data:', data);
+
+    // Example of how to work with the array of objects
+    data.forEach(user => {
     
-//     const records = []; 
-
-//     data.forEach(item => {
-//         name: item.name; 
-
-//     });
-// })
-// .catch(error => console.error('Error fetching data:', error));
+    });
+  }); 
 
 
 
