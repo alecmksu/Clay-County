@@ -17,17 +17,17 @@ document.addEventListener('click', function(event) {
 })
 
 
-// fetch('http://localhost/ClayCountyNew/search.php')  // Ensure the correct path to your PHP file
-// .then(response => response.json())    // Parse the JSON response
-// .then(data => {
-//     // Here, 'data' is an array of objects (e.g., [{id: 1, name: 'John Doe'}, ...])
-//     console.log('Fetched Data:', data);
+fetch('http://localhost/ClayCountyNew/search.php')  // Ensure the correct path to your PHP file
+.then(response => response.json())    // Parse the JSON response
+.then(data => {
+    // Here, 'data' is an array of objects (e.g., [{id: 1, name: 'John Doe'}, ...])
+    console.log('Fetched Data:', data);
 
-//     // Example of how to work with the array of objects
-//     //data.forEach(user => {
+    // Example of how to work with the array of objects
+    //data.forEach(user => {
     
-//     //});
-//   }); 
+    //});
+  }); 
 
 
 
