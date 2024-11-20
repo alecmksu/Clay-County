@@ -71,7 +71,7 @@ document.getElementById("searchButton").addEventListener("click", function() {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: data.toString(),  // Send the form data as URL-encoded
+         // Send the form data as URL-encoded
     })
     .then(response => response.json())  // Parse the JSON response
     .then(data => {
