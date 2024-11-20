@@ -147,9 +147,9 @@ TR.appendChild(TD6);
 TR.appendChild(TD7);
 TD2.innerHTML = name; 
 TD3.innerHTML = date; 
-TD5.innerHTML = location.section;
-TD6.innerHTML = location.range; 
-TD7.innerHTML = location.township; 
+TD5.innerHTML = section;
+TD6.innerHTML = range; 
+TD7.innerHTML = township; 
 
 });
 }); 
