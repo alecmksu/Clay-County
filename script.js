@@ -102,6 +102,9 @@ clearTheGrids.forEach(grid => {
 grid.classList.remove("highlight"); 
 })
 
+let clearTable = document.getElementById("tabledata"); 
+clearTable.innerHTML = ""
+
 const search = document.getElementById("granteeName").value.toLowerCase(); 
 
 //filters through data and grabs anyone with the name you input. Creates an array that holds the persons data
@@ -129,6 +132,7 @@ if(targetSection) {
 
 //create table 
 let TR = document.createElement("tr"); 
+TR.id = "tableData"; 
 let TD1 = document.createElement("td"); 
 let TD2 = document.createElement("td"); 
 let TD3 = document.createElement("td"); 
