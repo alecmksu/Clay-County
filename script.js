@@ -113,12 +113,23 @@ TR.id = "tableData";
 let TD1 = document.createElement("td"); 
 let TD2 = document.createElement("td"); 
 let TD3 = document.createElement("td"); 
+let TD4 = document.createElement("td"); 
+let TD5 = document.createElement("td"); 
+let TD6 = document.createElement("td"); 
+let TD7 = document.createElement("td"); 
 tableGrab.appendChild(TR);
 TR.appendChild(TD1); 
 TR.appendChild(TD2); 
 TR.appendChild(TD3); 
+TR.appendChild(TD4);
+TR.appendChild(TD5);
+TR.appendChild(TD6);
+TR.appendChild(TD7);
 TD2.innerHTML = name; 
 TD3.innerHTML = date; 
+TD5.innerHTML = section;
+TD6.innerHTML = range; 
+TD7.innerHTML = township; 
 
 });
 })
