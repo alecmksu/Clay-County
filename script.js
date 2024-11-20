@@ -102,19 +102,6 @@ clearTheGrids.forEach(grid => {
 grid.classList.remove("highlight"); 
 })
 
-let TR = document.createElement("tr"); 
-TR.id = "tableData"; 
-let TD1 = document.createElement("td"); 
-let TD2 = document.createElement("td"); 
-let TD3 = document.createElement("td"); 
-tableGrab.appendChild(TR);
-TR.appendChild(TD1); 
-TR.appendChild(TD2); 
-TR.appendChild(TD3); 
-
-let clearTable = document.getElementById("tabledata"); 
-clearTable.innerHTML = ""
-
 const search = document.getElementById("granteeName").value.toLowerCase(); 
 
 //filters through data and grabs anyone with the name you input. Creates an array that holds the persons data
@@ -141,6 +128,15 @@ if(targetSection) {
 }
 
 //create table 
+let TR = document.createElement("tr"); 
+TR.id = "tableData"; 
+let TD1 = document.createElement("td"); 
+let TD2 = document.createElement("td"); 
+let TD3 = document.createElement("td"); 
+tableGrab.appendChild(TR);
+TR.appendChild(TD1); 
+TR.appendChild(TD2); 
+TR.appendChild(TD3); 
 TD2.innerHTML = name; 
 TD3.innerHTML = date; 
 
