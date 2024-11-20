@@ -1,10 +1,10 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "ccprojectv3";
+    $dbname = "ccdatabaseproject";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection Failed: " . $conn->connect_error);
     }
 
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $search_name = "%" . $_POST['grantorName'] . "%";  
     
     $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantor_1` LIKE ?";
@@ -28,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            // echo "Grantor Name: " . $row["Last Name Grantor_1"] . "<br>";
+         
             $data[] = $row;
         }
     } 
