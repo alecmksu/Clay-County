@@ -47,6 +47,7 @@ document.getElementById('filter').addEventListener('click', function() {
 document.getElementById("searchButton").addEventListener("click", function() {
 
       // Perform the POST request with fetch()
+      //Will's File Path on Computer, Change if necessary
       fetch('http://localhost/ClayCountyNew/search.php', {
         method: 'POST',
         headers: {
