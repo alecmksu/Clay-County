@@ -18,6 +18,7 @@
     align-items: center;
     text-align: center;
 }
+
 .header-logo {
     position: absolute;
     left: 20px; /* Anchors the logo to the left */
@@ -131,6 +132,31 @@ body {
     background-image: linear-gradient(#4d7080,#295366);
     color:white;
   }
+
+  .login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-weight: bold;
+}
+
+/* Icon styling */
+.login-link ion-icon {
+    font-size: 20px;
+}
+
+/* Hover effect */
+.login-link:hover {
+    color: lightgray;
+}
+
+
   
 /* highlight grid */
   .highlight {
