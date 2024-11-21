@@ -14,9 +14,9 @@
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $search_name = "%" . $_POST['grantorName'] . "%";  
+    $search_name =$_POST['granteeName'];  
     
-    $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantor_1` LIKE ?";
+    $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantee_1` LIKE ?";
 
     $stmt = $conn->prepare($sql);
     
