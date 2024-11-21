@@ -35,11 +35,11 @@
     gap: 15px;
 }
 
-/* .submit-btn {
+.submit-btn {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-} */
+}
 
 .filter-container {
     display: inline-block;
@@ -118,12 +118,12 @@ body {
     width: 250px;
     border-radius: 5px;
 }
-.submit-btn{
+/* .submit-btn{
     background: #fff;
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
-}
+} */
 /* Data form */
 /* filter dropdown hide */
 .filter-hide {
