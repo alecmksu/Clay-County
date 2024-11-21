@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/*header basic outline added by Jacob down to topnav a:hover*/
 /*header basic outline added by Jacob down to topnav a:hover*/
 .header {
     position: relative; /* Allows absolute positioning of child elements */
@@ -47,40 +47,12 @@
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
 }
 
 .topnav a:hover {
-    background-color: #3d9be9;
+    background-color: aqua;
     color: black;
 }
-
-
-.login-link {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Space between icon and text */
-    font-weight: bold;
-}
-
-/* Icon styling */
-.login-link ion-icon {
-    font-size: 20px;
-}
-
-/* Hover effect */
-.login-link:hover {
-    color: lightgray;
-}
-
-
 body {
     height: 150vh;
     display: flex;
@@ -97,12 +69,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.section {
-    display: flex;
-    flex-direction: row;
-    align-items: last baseline;
-    gap: 15px;
-}
+/* input form */
 .section-label {
     margin-bottom: 8px;
 }
@@ -111,7 +78,15 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     width: 250px;
+    border-radius: 5px;
 }
+.submit-btn{
+    background: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+/* Data form */
 /* filter dropdown hide */
 .filter-hide {
     display: none;
@@ -146,50 +121,22 @@ body {
   height: 100%; 
 
 }
-/* submit button modification and table modification */
-.submit-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.filter-container {
-    display: inline-block;
-}
-
-table {
-    border-collapse:collapse;
-    width: 100%;
-
-}
-
-th {
-    height: 40px;
-}
-
-.facebook-icon{
-    color:aqua;
-    font-size: 30px;
-   text-decoration: none;
-}
-
-.instagram-icon{
-    color:red;
-    font-size: 30px;
-}
 
 /* Added by jacob */
 .footer{
     width: 100%;
     padding:20px;
     text-align: center;
-    font-size: 22px;
     margin-top:20px;
     background-image: linear-gradient(#4d7080,#295366);
     color:white;
   }
+<<<<<<< HEAD
   
 /* highlight grid */
   .highlight {
     background-color: yellow;
   }
+=======
+
+>>>>>>> 5c05d46abb7807bbfee80e702b6d4731530406f2
