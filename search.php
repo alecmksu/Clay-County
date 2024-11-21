@@ -19,28 +19,30 @@
     $sql = "SELECT * FROM ccdatamastertable WHERE `Last Name Grantor_1` LIKE ?";
 
     $stmt = $conn->prepare($sql);
-
+    
+    // Bind the parameter and execute the statement
+  
     $stmt->bind_param("s", $search_name);
     $stmt->execute();
+    
+    // Get the result of the query
     $result = $stmt->get_result();
 
-    echo "<p>Search Results For '$search_name':</p>";
-
-    $data = array(); 
-
+    // Check if there are any records
     if ($result->num_rows > 0) {
+        // Fetch and display each record
         while ($row = $result->fetch_assoc()) {
-         
-            $data[] = $row;
+            echo $row["DATE"] . " - Grantee Last: " . $row["Last Name Grantee_1"] . " - Grantee First: " . $row["First Name Grantee_1"] . " - TSP:" . $row["TSP"] . " - RGE:" . $row["RGE"] . " - SEC:" . $row["SEC"] . "<br>";
         }
-    } 
-    // else {
-    //     echo "No Results found for '$search_name'.";
-    // }
+    } else {
+        echo "No results found";
+    }
 
-    echo json_encode($data);
-
+    // Close the statement and connection
     $stmt->close();
     $conn->close();
 }
 ?>
+
+
+   
