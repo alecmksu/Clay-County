@@ -66,35 +66,35 @@ const records = [
 document.getElementById("searchButton").addEventListener("click", function() {
 
       // Perform the POST request with fetch()
-      fetch('http://localhost/ClayCountyNew/search.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-         // Send the form data as URL-encoded
-    })
-    .then(response => response.json())  // Parse the JSON response
-    .then(data => {
-        // Create an array of objects from the response data
-        const resultArray = data.map(row => {
-            return {
-                grantor: row['Last Name Grantor_1'],
-                grantee: row['Grantee'],  // Adjust based on your database fields
-                // Add more fields as necessary
-            };
-        });
+    //   fetch('http://localhost/ClayCountyNew/search.php', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/x-www-form-urlencoded',
+    //     },
+    //      // Send the form data as URL-encoded
+    // })
+    // .then(response => response.json())  // Parse the JSON response
+    // .then(data => {
+    //     // Create an array of objects from the response data
+    //     const resultArray = data.map(row => {
+    //         return {
+    //             grantor: row['Last Name Grantor_1'],
+    //             grantee: row['Grantee'],  // Adjust based on your database fields
+    //             // Add more fields as necessary
+    //         };
+    //     });
 
-        // Now you can use resultArray in your JavaScript code
-        console.log(resultArray);
+    //     // Now you can use resultArray in your JavaScript code
+    //     console.log(resultArray);
 
-        // Example of how you can manipulate this array:
-        resultArray.forEach(item => {
-            console.log(`Grantor: ${item.grantor}, Grantee: ${item.grantee}`);
-        });
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+    //     // Example of how you can manipulate this array:
+    //     resultArray.forEach(item => {
+    //         console.log(`Grantor: ${item.grantor}, Grantee: ${item.grantee}`);
+    //     });
+    // })
+    // .catch(error => {
+    //     console.error('Error:', error);
+    // });
 
 //clears the highlights when you want another person.
 let clearTheGrids = document.querySelectorAll(".highlight"); 
