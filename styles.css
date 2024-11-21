@@ -5,7 +5,6 @@
 }
 
 /*header basic outline added by Jacob down to topnav a:hover*/
-/*header basic outline added by Jacob down to topnav a:hover*/
 .header {
     position: relative; /* Allows absolute positioning of child elements */
     padding: 30px;
@@ -18,7 +17,6 @@
     align-items: center;
     text-align: center;
 }
-
 .header-logo {
     position: absolute;
     left: 20px; /* Anchors the logo to the left */
@@ -28,43 +26,6 @@
     height: auto;
 }
 
-.section {
-    display: flex;
-    flex-direction: row;
-    align-items: last baseline;
-    gap: 15px;
-}
-
-.submit-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.filter-container {
-    display: inline-block;
-}
-
-table {
-    border-collapse:collapse;
-    width: 100%;
-
-}
-
-th {
-    height: 40px;
-}
-
-.facebook-icon{
-    color:aqua;
-    font-size: 30px;
-   text-decoration: none;
-}
-
-.instagram-icon{
-    color:red;
-    font-size: 30px;
-}
 .header-text {
     /* Optional: Style for the center text in the header */
     font-size: 24px;
@@ -85,12 +46,40 @@ th {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
 }
 
 .topnav a:hover {
-    background-color: aqua;
+    background-color: #3d9be9;
     color: black;
 }
+
+/*login link */
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-weight: bold;
+}
+
+/* Icon styling */
+.login-link ion-icon {
+    font-size: 20px;
+}
+
+/* Hover effect */
+.login-link:hover {
+    color: lightgray;
+}
+
+
 body {
     height: 150vh;
     display: flex;
@@ -100,14 +89,19 @@ body {
 }
 /* Form */
 .container {
-    margin-top: 40rcap;
+   /* margin-top: 40rcap;*/
     height: 50vh;
     padding-top: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* input form */
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 15px;
+}
 .section-label {
     margin-bottom: 8px;
 }
@@ -116,9 +110,7 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     width: 250px;
-    border-radius: 5px;
 }
-
 /* filter dropdown hide */
 .filter-hide {
     display: none;
@@ -153,6 +145,37 @@ body {
   height: 100%; 
 
 }
+/* submit button modification and table modification */
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-container {
+    display: inline-block;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+
+}
+
+th {
+    height: 40px;
+}
+
+.facebook-icon{
+    color:aqua;
+    font-size: 30px;
+   text-decoration: none;
+}
+
+.instagram-icon{
+    color:red;
+    font-size: 30px;
+}
 
 /* Added by jacob */
 .footer{
@@ -165,32 +188,6 @@ body {
     color:white;
   }
 
-  .login-link {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Space between icon and text */
-    font-weight: bold;
-}
-
-/* Icon styling */
-.login-link ion-icon {
-    font-size: 20px;
-}
-
-/* Hover effect */
-.login-link:hover {
-    color: lightgray;
-}
-
-
-  
-/* highlight grid */
   .highlight {
     background-color: yellow;
   }
